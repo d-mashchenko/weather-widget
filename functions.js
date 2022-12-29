@@ -20,7 +20,7 @@ function getWeatherTime(weatherContainer, city) {
         .getElementsByClassName('weather__icon')[0]
         .setAttribute(
           'src',
-          `http://openweathermap.org/img/w/${data.weather[0].icon}.png`
+          `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
         );
       weatherContainer.getElementsByClassName('weather__temp')[0].textContent =
         Math.round(data.main.temp) + ' °C';
